@@ -9,4 +9,5 @@ export class Episode {
   episode!: string;
   title!: string;
   description?: string;
+  imageUrl?: string;
 }

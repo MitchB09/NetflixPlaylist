@@ -1,8 +1,11 @@
 import React from "react";
-import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardActions from "@mui/material/CardActions";
+import CardMedia from "@mui/material/CardMedia";
+import IconButton from "@mui/material/IconButton";
+import PlayArrow from "@mui/icons-material/PlayArrow";
+
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 
@@ -14,9 +17,10 @@ interface PlayListDetailsProps {
 
 function PlayListDetails(props: PlayListDetailsProps) {
   const { playlist } = props;
+
   return (
     <>
-      <Typography variant="h2" component="div">
+      <Typography variant="h2" color="white" component="div">
         {playlist.name}
       </Typography>
       <Grid
@@ -29,27 +33,43 @@ function PlayListDetails(props: PlayListDetailsProps) {
         {playlist.episodes.map((episode) => {
           return (
             <Grid item>
-              <Card key={episode.title} sx={{ minWidth: 275 }}>
-                <CardContent>
-                  <Typography variant="h5" component="div">
-                    {episode.title}
-                  </Typography>
-                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                    {episode.description
-                      ? episode.description
-                      : "No description available"}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button
-                    onClick={() => {
-                      window.open(episode.url, "_blank");
-                    }}
-                    size="small"
+              <Card key={episode.title} sx={{ display: "flex" }}>
+                {episode.imageUrl && (
+                  <CardMedia
+                    component="img"
+                    sx={{ width: 151 }}
+                    image={episode.imageUrl}
+                    alt="Live from space album cover"
+                  />
+                )}
+                <Box sx={{ display: "flex", flexDirection: "column" }}>
+                  <CardContent sx={{ flex: "1 0 auto" }}>
+                    <Typography component="div" variant="h5">
+                      {episode.title}
+                    </Typography>
+                    <Typography
+                      variant="subtitle1"
+                      color="text.secondary"
+                      component="div"
+                    >
+                      {episode.description
+                        ? episode.description
+                        : "No description available"}
+                    </Typography>
+                  </CardContent>
+                  <Box
+                    sx={{ display: "flex", alignItems: "center", pl: 1, pb: 1 }}
                   >
-                    Watch
-                  </Button>
-                </CardActions>
+                    <IconButton
+                      aria-label="play/pause"
+                      onClick={() => {
+                        window.open(episode.url, "_blank");
+                      }}
+                    >
+                      <PlayArrow sx={{ height: 38, width: 38 }} />
+                    </IconButton>
+                  </Box>
+                </Box>
               </Card>
             </Grid>
           );

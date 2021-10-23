@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "./logo.svg";
+import Typography from "@mui/material/Typography";
+
 import "./App.css";
 import PlaylistDetails from "./components/playlist-details";
 import TheOffice from "./resources/office";
@@ -9,18 +10,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <PlaylistDetails playlist={TheOffice} />
-        <PlaylistDetails playlist={TreeHouseOfHorrors} />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Typography variant="h4">Playlists</Typography>
       </header>
+      <PlaylistDetails playlist={TheOffice} />
+      <PlaylistDetails playlist={TreeHouseOfHorrors} />
     </div>
   );
 }
