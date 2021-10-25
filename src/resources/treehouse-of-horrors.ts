@@ -8,60 +8,73 @@ const TreeHouseOfHorrors: EpisodePlaylist = {
       season: "2",
       episode: "3",
       title: "Treehouse of Horror I",
+      imageUrl: "https://static.simpsonswiki.com/images/d/d7/Treehouse_of_Horror_%28Title_Card%29.png"
     },
     {
       url: "https://www.disneyplus.com/video/1d2183e7-f0c6-4b61-abd7-47688dccfd15",
       season: "3",
       episode: "6",
       title: "Treehouse of Horror II",
+      imageUrl: "https://static.simpsonswiki.com/images/a/a0/Treehouse_of_Horror_II_-_Title_Card.png"
     },
     {
       url: "https://www.disneyplus.com/video/540e1a2c-051a-4f48-b5f0-585138090af5",
       season: "4",
       episode: "5",
       title: "Treehouse of Horror III",
+      imageUrl: "https://static.simpsonswiki.com/images/f/fe/Treehouse_of_Horror_III_-_Title_Card.png"
     },
     {
       url: "https://www.disneyplus.com/video/33dfa7a1-fe6f-4466-a87d-9bf43a8be7cd",
       season: "5",
       episode: "5",
       title: "Treehouse of Horror IV",
+      imageUrl: "https://static.simpsonswiki.com/images/1/11/Treehouse_of_horror_iv_title.png",
     },
     {
       url: "https://www.disneyplus.com/video/956d5f58-9674-4f76-88de-b113d2318202",
       season: "6",
       episode: "6",
       title: "Treehouse of Horror V",
+      imageUrl: "https://static.simpsonswiki.com/images/4/40/Treehouse_of_horror_v_title.png",
     },
     {
       url: "https://www.disneyplus.com/video/384c7808-cd8f-4908-a095-c3fedf955d37",
       season: "7",
       episode: "6",
       title: "Treehouse of Horror VI",
+      imageUrl: "https://static.simpsonswiki.com/images/3/30/Treehouse_of_Horror_VI_%28Title_Card%29.png",
     },
     {
       url: "https://www.disneyplus.com/video/50a03393-e5f7-4a07-b0a2-538ab3b16b51",
       season: "8",
       episode: "1",
       title: "Treehouse of Horror VII",
+      imageUrl: "https://static.simpsonswiki.com/images/e/e4/Treehouse_of_Horror_VII_-_Title_Card.png"
+
     },
     {
       url: "https://www.disneyplus.com/video/80cee80e-5b99-4e4a-b184-d7d618b0e295",
       season: "9",
       episode: "5",
       title: "Treehouse of Horror VIII",
+      imageUrl: "https://static.simpsonswiki.com/images/2/2f/Treehouse_of_Horror_VIII_-_Title_Card.png"
+
     },
     {
       url: "https://www.disneyplus.com/video/ce588fbc-5976-4c34-b1fd-9cd5ca8b1ce8",
       season: "10",
       episode: "4",
       title: "Treehouse of Horror IX",
+      imageUrl: "https://static.simpsonswiki.com/images/1/1f/Treehouse_of_Horror_IX.jpg"
+
     },
     {
       url: "https://www.disneyplus.com/video/763cd9de-443f-443f-8611-1d34a7d719c9",
       season: "11",
       episode: "4",
       title: "Treehouse of Horror X",
+      imageUrl: "https://static.simpsonswiki.com/images/f/fb/Treehouse_x_title.png"
     },
     {
       url: "https://www.disneyplus.com/video/8f3f2a60-3741-426f-bbc6-b303d1b0adbe",

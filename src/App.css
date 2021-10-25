@@ -1,6 +1,9 @@
 .App {
-  padding: 3em;
   background-color: #282c34;
+}
+
+.MainContent {
+  padding: 2em 3em 3em;
 }
 
 .App-logo {

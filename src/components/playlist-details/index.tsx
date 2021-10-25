@@ -20,7 +20,7 @@ function PlayListDetails(props: PlayListDetailsProps) {
 
   return (
     <>
-      <Typography variant="h2" color="white" component="div">
+      <Typography variant="h4" sx={{ marginTop: "2em" }} color="white" component="div">
         {playlist.name}
       </Typography>
       <Grid
@@ -32,8 +32,8 @@ function PlayListDetails(props: PlayListDetailsProps) {
       >
         {playlist.episodes.map((episode) => {
           return (
-            <Grid item>
-              <Card key={episode.title} sx={{ display: "flex" }}>
+            <Grid item key={episode.title} >
+              <Card sx={{ display: "flex" }}>
                 {episode.imageUrl && (
                   <CardMedia
                     component="img"
